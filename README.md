@@ -4,6 +4,12 @@
 
 ---
 
+## 🌍 Live Demo
+
+🔗 [https://picked-n-packed.vercel.app](https://picked-n-packed.vercel.app)
+
+---
+
 ## 📌 Project Purpose
 
 Picked & Packed is a fully responsive online shopping application where users can discover products across a wide range of categories, search and filter by their preferences, manage a personal cart, and save items to a wishlist.
@@ -66,13 +72,13 @@ This project was built as part of a web development course to demonstrate practi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/daksheshsharma2409/picked-n-packed.git
+   git clone https://github.com/YOUR_USERNAME/picked-and-packed.git
    ```
 
 2. Navigate into the project folder:
 
    ```bash
-   cd picked-n-packed
+   cd picked-and-packed
    ```
 
 3. Install dependencies:
@@ -107,5 +113,5 @@ This project was built as part of a web development course to demonstrate practi
 
 ## 👤 Author
 
-**Your Name**
+**Dakshesh Sharma**
 GitHub: [@daksheshsharma2409](https://github.com/daksheshsharma2409)
