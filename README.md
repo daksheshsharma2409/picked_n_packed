@@ -66,7 +66,7 @@ This project was built as part of a web development course to demonstrate practi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/daksheshsharma2409/picked-and-packed.git
+   git clone https://github.com/daksheshsharma2409/picked-n-packed.git
    ```
 
 2. Navigate into the project folder:
