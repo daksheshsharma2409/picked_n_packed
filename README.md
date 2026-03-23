@@ -78,7 +78,7 @@ This project was built as part of a web development course to demonstrate practi
 2. Navigate into the project folder:
 
    ```bash
-   cd picked-and-packed
+   cd picked_n_packed
    ```
 
 3. Install dependencies:
