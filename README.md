@@ -1,6 +1,6 @@
 # 🛍️ Picked & Packed
 
-> A responsive e-commerce web app powered by DummyJSON API. Features product search, category filtering, cart & wishlist — built with React & Tailwind CSS.
+> A responsive e-commerce web app powered by DummyJSON API. Features product search, category filtering, cart & wishlist — built with Vanilla JavaScript & Tailwind CSS.
 
 ---
 
@@ -14,7 +14,7 @@
 
 Picked & Packed is a fully responsive online shopping application where users can discover products across a wide range of categories, search and filter by their preferences, manage a personal cart, and save items to a wishlist.
 
-This project was built as part of a web development course to demonstrate practical skills in API integration, array manipulation using Higher-Order Functions, and modern component-based UI design.
+This project was built as part of a web development course to demonstrate practical skills in API integration, array manipulation using Higher-Order Functions, and modern UI design — using only Vanilla JavaScript with no frameworks.
 
 ---
 
@@ -59,9 +59,9 @@ This project was built as part of a web development course to demonstrate practi
 
 | Technology        | Purpose                                         |
 | ----------------- | ----------------------------------------------- |
-| React (Vite)      | Component-based UI and state management         |
+| HTML5             | Page structure and semantic markup              |
 | Tailwind CSS      | Utility-first styling and responsive design     |
-| JavaScript (ES6+) | Logic, API calls, array HOFs                    |
+| JavaScript (ES6+) | Logic, API calls, DOM manipulation, array HOFs  |
 | DummyJSON API     | Product data source                             |
 | LocalStorage      | Persisting cart, wishlist, and theme preference |
 
@@ -81,22 +81,12 @@ This project was built as part of a web development course to demonstrate practi
    cd picked_n_packed
    ```
 
-3. Install dependencies:
-
-   ```bash
-   npm install
+3. Open `index.html` directly in your browser, or use Live Server in VS Code:
+   ```
+   Right-click index.html → Open with Live Server
    ```
 
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and visit:
-   ```
-   http://localhost:5173
-   ```
+> No installation or build step needed — runs entirely in the browser.
 
 ---
 
