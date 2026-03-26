@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Picked & Packed</title>
+    <title>Shop - Picked & Packed</title>
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body class="font-main">
+  <body class="font-main bg-[#f5ead8]">
     <nav class="bg-white border-b border-[#EDE9E3] sticky top-0 z-50">
       <div
         class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-4"
@@ -110,10 +110,20 @@
       </div>
     </nav>
 
-    <div class="bg-blue-400 h-200 w-screen"></div>
-    <div class="bg-green-400 h-200 w-screen"></div>
-    <div class="bg-yellow-400 h-200 w-screen"></div>
+    <div
+      id="shop-container"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-10"
+    >
+        </div>
+      </div>
+    </div>
+    <div id="getToTop" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-[#3a2e22] text-white flex items-center justify-center cursor-pointer shadow-lg hover:bg-[#5a4838] hover:scale-110 transition-all z-50 opacity-0">
+      <i data-lucide="arrow-up" class="w-[21px] h-[21px]"></i>
+    </div>
 
+
+    <script src="../api/api.js"></script>
+    <script src="render.js"></script>
     <script src="../navbar.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
