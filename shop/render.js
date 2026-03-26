@@ -2,34 +2,7 @@ const data = localStorage.getItem("userData");
 const json_data = JSON.parse(data);
 const container = document.getElementById("shop-container");
 
-{
-  /* 
-              <!-- 4 filled stars -->
-              <i
-                data-lucide="star"
-                class="w-[15px] h-[15px] fill-[#e8a020] stroke-[#e8a020]"
-              ></i>
-              <i
-                data-lucide="star"
-                class="w-[15px] h-[15px] fill-[#e8a020] stroke-[#e8a020]"
-              ></i>
-              <i
-                data-lucide="star"
-                class="w-[15px] h-[15px] fill-[#e8a020] stroke-[#e8a020]"
-              ></i>
-              <i
-                data-lucide="star"
-                class="w-[15px] h-[15px] fill-[#e8a020] stroke-[#e8a020]"
-              ></i>
-              <!-- 1 empty star -->
-              <i
-                data-lucide="star"
-                class="w-[15px] h-[15px] fill-[#d4c0a8] stroke-[#d4c0a8]"
-              ></i>
-            </div>
-            <span class="text-[12px] font-semibold text-[#5a4030]">${obj.rating}</span>
-            <span class="text-[12px] text-[#8a7060]">(${Math.floor(Math.random() * (9000 - 1000 + 1)) + 1000} reviews)</span> */
-}
+
 json_data.map((obj) => {
   let tags_form = `<ul class="flex flex-wrap gap-1.5 mt-3" id="tags_container">`;
   obj.tags.map((tag) => {
