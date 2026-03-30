@@ -2,7 +2,6 @@ const data = localStorage.getItem("userData");
 const json_data = JSON.parse(data);
 const container = document.getElementById("shop-container");
 
-
 json_data.map((obj) => {
   let tags_form = `<ul class="flex flex-wrap gap-1.5 mt-3" id="tags_container">`;
   obj.tags.map((tag) => {
