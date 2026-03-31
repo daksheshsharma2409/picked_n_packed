@@ -1,4 +1,4 @@
-import fetchUsingApi from "../api/api.js";
+import fetchUsingApi from "../services/api.js";
 const container = document.getElementById("shop-container");
 
 const renderData = async () => {
