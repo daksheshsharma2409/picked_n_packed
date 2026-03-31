@@ -1,34 +1,37 @@
-const data = localStorage.getItem("userData");
-const json_data = JSON.parse(data);
+import fetchUsingApi from "../api/api.js";
 const container = document.getElementById("shop-container");
 
-json_data.map((obj) => {
-  let tags_form = `<ul class="flex flex-wrap gap-1.5 mt-3" id="tags_container">`;
-  obj.tags.map((tag) => {
-    tags_form += `<li class="text-[10.5px] font-semibold uppercase tracking-wide px-2.5 py-0.5 bg-white rounded-full border-[1.5px] border-[#b8a490] text-[#7a6a58] hover:border-[#7a6a58] hover:bg-[#f5e8d4] cursor-pointer transition-all">
+const renderData = async () => {
+  const fetchedData = await fetchUsingApi();
+  const json_data = fetchedData.products;
+  let all_html = "";
+  json_data.map((obj) => {
+    let tags_form = `<ul class="flex flex-wrap gap-1.5 mt-3" id="tags_container">`;
+    obj.tags.map((tag) => {
+      tags_form += `<li class="text-[10.5px] font-semibold uppercase tracking-wide px-2.5 py-0.5 bg-white rounded-full border-[1.5px] border-[#b8a490] text-[#7a6a58] hover:border-[#7a6a58] hover:bg-[#f5e8d4] cursor-pointer transition-all">
        ${tag}
      </li>`;
-  });
-  tags_form += "</ul>";
+    });
+    tags_form += "</ul>";
 
-  let stars_html = `<div class="flex gap-0.5" id="stars-container">`;
-  for (let i = 0; i < Math.round(obj.rating); i++) {
-    stars_html += `<i
+    let stars_html = `<div class="flex gap-0.5" id="stars-container">`;
+    for (let i = 0; i < Math.round(obj.rating); i++) {
+      stars_html += `<i
                 data-lucide="star"
                 class="w-[15px] h-[15px] fill-[#e8a020] stroke-[#e8a020]"
               ></i>`;
-  }
-  for (let i = 0; i < 5 - Math.round(obj.rating); i++) {
-    stars_html += `<i
+    }
+    for (let i = 0; i < 5 - Math.round(obj.rating); i++) {
+      stars_html += `<i
                 data-lucide="star"
                 class="w-[15px] h-[15px] fill-[#d4c0a8] stroke-[#d4c0a8]"
               ></i>`;
-  }
-  stars_html += `</div>
+    }
+    stars_html += `</div>
             <span class="text-[12px] font-semibold text-[#5a4030]">${obj.rating}</span>
             <span class="text-[12px] text-[#8a7060]">(${Math.floor(Math.random() * (9000 - 1000 + 1)) + 1000} reviews)</span>`;
 
-  const html_data = `<div
+    const html_data = `<div
         class="w-full pb-5 border-2 border-solid border-[#908373] rounded-3xl bg-[#FBEFE0] shadow-[6px_6px_0px_#c2a98a] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
       >
         <div
@@ -85,8 +88,15 @@ json_data.map((obj) => {
         </div>
       </div>`;
 
-  container.innerHTML += html_data;
-});
+    all_html += html_data;
+  });
+  container.innerHTML = all_html;
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+};
+
+renderData();
 
 const toTop = document.getElementById("getToTop");
 toTop.addEventListener("click", () => {
