@@ -55,7 +55,6 @@ const renderData = async () => {
             ${obj.title}
           </h2>
 
-          <!-- Rating Row -->
           <div class="flex items-center gap-1.5 mt-2">
             ${stars_html}
           </div>
