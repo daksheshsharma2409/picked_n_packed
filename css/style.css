@@ -244,9 +244,6 @@
   .left-1\/2 {
     left: calc(1 / 2 * 100%);
   }
-  .left-10 {
-    left: calc(var(--spacing) * 10);
-  }
   .z-10 {
     z-index: 10;
   }
@@ -450,9 +447,6 @@
   }
   .w-\[90\%\] {
     width: 90%;
-  }
-  .w-auto {
-    width: auto;
   }
   .w-full {
     width: 100%;
@@ -695,18 +689,6 @@
   .bg-gradient-to-tl {
     --tw-gradient-position: to top left in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\'images\/cards\/beauty_skincare_card\.jpeg\'\)\] {
-    background-image: url('images/cards/beauty_skincare_card.jpeg');
-  }
-  .bg-\[url\(\'images\/cards\/fashion_card\.avif\'\)\] {
-    background-image: url('images/cards/fashion_card.avif');
-  }
-  .bg-\[url\(\'images\/cards\/home_living_card\.jpeg\'\)\] {
-    background-image: url('images/cards/home_living_card.jpeg');
-  }
-  .bg-\[url\(\'images\/cards\/tech_devices_card\.jpeg\'\)\] {
-    background-image: url('images/cards/tech_devices_card.jpeg');
   }
   .from-\[\#F2EAE0\] {
     --tw-gradient-from: #F2EAE0;
@@ -1129,14 +1111,6 @@
       }
     }
   }
-  .hover\:-translate-y-0\.5 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-translate-y: calc(var(--spacing) * -0.5);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
   .hover\:-translate-y-1 {
     &:hover {
       @media (hover: hover) {
@@ -1390,6 +1364,51 @@
   .md\:text-\[82px\] {
     @media (width >= 48rem) {
       font-size: 82px;
+    }
+  }
+  .md\:group-hover\:flex {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          display: flex;
+        }
+      }
+    }
+  }
+  .md\:group-hover\:items-center {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          align-items: center;
+        }
+      }
+    }
+  }
+  .md\:group-hover\:justify-between {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .md\:group-hover\:bg-black {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          background-color: var(--color-black);
+        }
+      }
+    }
+  }
+  .md\:group-hover\:opacity-90 {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          opacity: 90%;
+        }
+      }
     }
   }
   .lg\:grid-cols-3 {
