@@ -97,7 +97,7 @@ This project was built as part of a web development course to demonstrate practi
 | Milestone      | Description                                   | Deadline   |
 | -------------- | --------------------------------------------- | ---------- |
 | ✅ Milestone 1 | Project setup, idea planning, README          | 23rd March |
-| 🔲 Milestone 2 | API integration, display data, responsiveness | 1st April  |
+| ✅ Milestone 2 | API integration, display data, responsiveness | 1st April  |
 | 🔲 Milestone 3 | Search, filter, sort, cart, wishlist          | 8th April  |
 | 🔲 Milestone 4 | Final cleanup, documentation, deployment      | 10th April |
 
