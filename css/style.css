@@ -1069,24 +1069,24 @@
     -webkit-user-select: none;
     user-select: none;
   }
-  .group-hover\:flex {
+  .group-hover\:h-\[100\%\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
-        display: flex;
+        height: 100%;
       }
     }
   }
-  .group-hover\:items-center {
+  .group-hover\:h-\[100\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
-        align-items: center;
+        height: 100;
       }
     }
   }
-  .group-hover\:justify-between {
+  .group-hover\:w-\[100\%\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
-        justify-content: space-between;
+        width: 100%;
       }
     }
   }
@@ -1389,24 +1389,6 @@
       &:is(:where(.group):hover *) {
         @media (hover: hover) {
           justify-content: space-between;
-        }
-      }
-    }
-  }
-  .md\:group-hover\:bg-black {
-    @media (width >= 48rem) {
-      &:is(:where(.group):hover *) {
-        @media (hover: hover) {
-          background-color: var(--color-black);
-        }
-      }
-    }
-  }
-  .md\:group-hover\:opacity-90 {
-    @media (width >= 48rem) {
-      &:is(:where(.group):hover *) {
-        @media (hover: hover) {
-          opacity: 90%;
         }
       }
     }

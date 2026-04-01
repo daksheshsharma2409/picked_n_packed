@@ -2,6 +2,8 @@
 
 > A responsive e-commerce web app powered by DummyJSON API. Features product search, category filtering, cart & wishlist — built with Vanilla JavaScript & Tailwind CSS.
 
+![Logo](images/logo.png)
+
 ---
 
 ## 🌍 Live Demo
