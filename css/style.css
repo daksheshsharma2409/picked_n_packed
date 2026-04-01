@@ -652,6 +652,9 @@
   .bg-\[\#B85C38\]\/20 {
     background-color: color-mix(in oklab, #B85C38 20%, transparent);
   }
+  .bg-\[\#EDE4D8\] {
+    background-color: #EDE4D8;
+  }
   .bg-\[\#F5F1EC\] {
     background-color: #F5F1EC;
   }
